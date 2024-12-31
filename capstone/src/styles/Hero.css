@@ -1,0 +1,66 @@
+.hero-component {
+    background-color: #495E57;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 20px 70px;
+    box-sizing: border-box; /* Ensure consistent padding and border behavior */
+}
+
+.hero-title {
+    font-size: 4em; /* 64px */
+    color: #F4CE14;
+    margin: 0;
+    font-weight: bold; /* Added font weight for emphasis */
+}
+
+.hero-subtitle {
+    font-size: 2.5em; /* 40px */
+    color: #fff;
+    margin: 0;
+    font-weight: 500; /* Added font weight for better readability */
+}
+
+.hero-description {
+    font-size: 1.125em; /* 18px */
+    color: #fff;
+    margin: 0;
+    line-height: 1.5; /* Added line height for better readability */
+}
+
+.hero-component-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px; /* Set a max-width for better layout */
+}
+
+@media (max-width: 768px) {
+    .hero-component {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px; /* Adjusted padding for smaller screens */
+        gap: 1.5em; /* Adjusted gap for smaller screens */
+    }
+
+    .hero-title {
+        font-size: 3em; /* Adjusted font size for smaller screens */
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .hero-subtitle {
+        font-size: 2em; /* Adjusted font size for smaller screens */
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .hero-description {
+        font-size: 1em; /* Adjusted font size for smaller screens */
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .hero-component-left {
+        align-items: center; /* Center items on smaller screens */
+        max-width: 100%; /* Ensure full width on smaller screens */
+    }
+}

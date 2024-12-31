@@ -1,0 +1,66 @@
+header {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em; /* Increased font size for better readability */
+    color: #333; /* Added color for better contrast */
+}
+
+a.nav-item {
+    margin: 0 8px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Added transition for smooth hover effect */
+}
+
+a.nav-item:hover {
+    background-color: #eee;
+    color: #007BFF; /* Added color change on hover */
+}
+
+a.nav-item.nav-item-active {
+    border-bottom: 2px solid #495E57;
+    color: #495E57; /* Added color to match the border */
+}
+
+header.header {
+    display: flex;
+    padding: 20px 70px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f8f8; /* Ensure consistent background color */
+    border-bottom: 1px solid #ddd; /* Ensure consistent border */
+    box-sizing: border-box;
+}
+
+header.header nav > ul {
+    list-style: none;
+    display: flex;
+    padding: 0; /* Removed default padding */
+    margin: 0; /* Removed default margin */
+}
+
+@media (max-width: 768px) {
+    header.header {
+        flex-direction: column;
+        padding: 1rem 20px; /* Adjusted padding for smaller screens */
+    }
+
+    header.header nav > ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem; /* Added gap for better spacing */
+    }
+
+    a.nav-item {
+        padding: 8px 0; /* Adjusted padding for smaller screens */
+    }
+}

@@ -1,0 +1,105 @@
+.specials-section {
+    padding: 20px 70px;
+    background-color: #f9f9f9; /* Added background color for better contrast */
+    box-sizing: border-box; /* Ensure consistent padding and border behavior */
+}
+
+.specials-title-article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.specials-title {
+    color: #000;
+    font-size: 2.5em; /* 40px */
+    margin: 0;
+    font-weight: bold; /* Added font weight for emphasis */
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.card {
+    flex: 1;
+    border: 1px solid #dedede;
+    border-radius: 0.5rem;
+    background: #fff; /* Changed background to white for better contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow for better visual appeal */
+    max-width: 300px; /* Set a max-width for better layout */
+    transition: transform 0.3s ease; /* Added transition for smooth hover effect */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Added hover effect */
+}
+
+.food-img {
+    width: 100%;
+    height: 200px; /* Adjusted height for better aspect ratio */
+    border-radius: 0.5rem 0.5rem 0 0;
+    object-fit: cover; /* Ensure image covers the area */
+}
+
+.card-content {
+    padding: 0.75rem;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Added alignment for better layout */
+    margin-bottom: 0.5rem; /* Added margin for spacing */
+}
+
+.item-name {
+    font-size: 1.25em; /* 20px */
+    font-weight: 500;
+    color: #333; /* Added color for better contrast */
+}
+
+.item-price {
+    font-size: 1.25em; /* 20px */
+    font-weight: 700;
+    color: #495E57; /* Added color for better contrast */
+}
+
+.item-description {
+    font-size: 1em; /* 16px */
+    color: #666; /* Added color for better contrast */
+    line-height: 1.5; /* Added line height for better readability */
+}
+
+@media (max-width: 768px) {
+    .specials-section {
+        padding: 20px; /* Adjusted padding for smaller screens */
+    }
+
+    .specials-title-article {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .specials-title {
+        font-size: 2em; /* Adjusted font size for smaller screens */
+    }
+
+    .cards {
+        gap: 0.5em; /* Adjusted gap for smaller screens */
+    }
+
+    .card {
+        max-width: 100%; /* Ensure full width on smaller screens */
+    }
+
+    .food-img {
+        height: 150px; /* Adjusted height for smaller screens */
+    }
+}

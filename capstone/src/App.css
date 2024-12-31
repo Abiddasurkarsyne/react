@@ -1,0 +1,71 @@
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif; /* Added font-family for better typography */
+  background-color: #f0f0f0; /* Added background color for better contrast */
+  min-height: 100vh; /* Ensure the app takes full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box; /* Ensure consistent padding and border behavior */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  transition: transform 0.3s ease; /* Added transition for smooth hover effect */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-logo:hover {
+  transform: scale(1.1); /* Added hover effect */
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px; /* Added padding for better spacing */
+  box-sizing: border-box; /* Ensure consistent padding and border behavior */
+}
+
+.App-link {
+  color: #61dafb;
+  text-decoration: none; /* Removed underline for better visual appeal */
+  font-weight: bold; /* Added font weight for emphasis */
+  transition: color 0.3s ease; /* Added transition for smooth hover effect */
+}
+
+.App-link:hover {
+  color: #21a1f1; /* Added hover effect */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(8px + 2vmin); /* Adjusted font size for smaller screens */
+    padding: 10px; /* Adjusted padding for smaller screens */
+  }
+
+  .App-logo {
+    height: 30vmin; /* Adjusted logo size for smaller screens */
+  }
+}

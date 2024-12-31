@@ -1,0 +1,87 @@
+.testimonials {
+    padding: 20px 70px;
+    background-color: #f9f9f9; /* Added background color for better contrast */
+    box-sizing: border-box; /* Ensure consistent padding and border behavior */
+}
+
+.testimonials-title {
+    font-size: 2.5em; /* 40px */
+    text-align: center;
+    color: #333; /* Added color for better contrast */
+    font-weight: bold; /* Added font weight for emphasis */
+    margin-bottom: 1rem; /* Added margin for spacing */
+}
+
+.testimonials-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap; /* Added flex-wrap for better responsiveness */
+    justify-content: center; /* Center the testimonials */
+}
+
+.testimonial {
+    border: 1px solid #dedede;
+    padding: 16px;
+    background-color: #fff; /* Added background color for better contrast */
+    border-radius: 8px; /* Added border radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow for better visual appeal */
+    max-width: 300px; /* Set a max-width for better layout */
+    transition: transform 0.3s ease; /* Added transition for smooth hover effect */
+}
+
+.testimonial:hover {
+    transform: translateY(-5px); /* Added hover effect */
+}
+
+.testimonial img {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%; /* Added border radius for circular images */
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+.reviewer-name-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem; /* Added margin for spacing */
+}
+
+.reviewer-name {
+    font-size: 1.25em; /* Added class for reviewer name */
+    font-weight: bold; /* Added font weight for emphasis */
+    color: #333; /* Added color for better contrast */
+}
+
+.review-text {
+    font-size: 1em; /* 14px */
+    color: #555; /* Added color for better contrast */
+    line-height: 1.5; /* Added line height for better readability */
+}
+
+@media (max-width: 768px) {
+    .testimonials {
+        padding: 20px; /* Adjusted padding for smaller screens */
+    }
+
+    .testimonials-container {
+        flex-direction: column; /* Changed to column layout for smaller screens */
+        gap: 1rem; /* Adjusted gap for smaller screens */
+    }
+
+    .testimonial {
+        max-width: 100%; /* Ensure full width on smaller screens */
+    }
+
+    .reviewer-name-image {
+        flex-direction: column; /* Changed to column layout for smaller screens */
+        align-items: center; /* Center items on smaller screens */
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .review-text {
+        text-align: center; /* Center text on smaller screens */
+    }
+}
